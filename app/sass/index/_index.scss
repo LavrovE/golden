@@ -1,22 +1,9 @@
-.smart {
+.half{
   @include col();
-  @include size-xs(12);
-  @include size-lg(6);
-  display: inline-block;
-  @include size-sm(4);
+  @include size-md(12);
+  @include size-xs(6);
 }
-.test {
-  @include col();
-  @include size-xs(12);
-  @include size-lg(6);
-  display: inline-block;
-  @include size-sm(4);
+.flex-container{
+  @include row-flex;
 }
-.smart{
-  display: flex;
-  opacity: 0.5;
-  position: relative;
-}
-.zaza{
-  display: flex;
-}
+
