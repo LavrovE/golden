@@ -2,4 +2,5 @@
 $(document).ready(function () {
     console.log('test');
     $("form").validate();
+    
 });
