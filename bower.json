@@ -19,6 +19,8 @@
   "devDependencies": {
     "bootstrap": "^3",
     "jquery": "^3",
-    "jQuery.print": "^1.5.1"
+    "jQuery.print": "^1.5.1",
+    "jquery-validation": "^1.17.0",
+    "dropzone": "^5.1.1"
   }
 }
