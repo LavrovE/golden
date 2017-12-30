@@ -1,1 +1,148 @@
-a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var{vertical-align:baseline;font-family:inherit;font-weight:inherit;font-style:inherit;font-size:100%;outline:0;padding:0;margin:0;border:0}:focus{outline:0}body{background:#fff;line-height:1;color:#000}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,td,th{font-weight:400;text-align:left}blockquote:after,blockquote:before,q:after,q:before{content:""}blockquote,q{quotes:"" ""}*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.clearfix:after{content:"";display:table;clear:both}.half{box-sizing:border-box;word-wrap:break-word;margin-left:7.5px;margin-right:7.5px;width:calc(100% - 15px);background:red;height:154px;margin:0 auto;margin-bottom:10px;margin-top:10px}.flex-container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-7.5px;margin-right:-7.5px;max-width:1200px;margin:0 auto;padding-left:0;padding-right:0;background:#00f}.lal{opacity:.5}@font-face{font-family:Ubuntu-R;src:url(../fonts/UbuntuRegular.eot);src:url(../fonts/UbuntuRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/UbuntuRegular.woff) format("woff"),url(../fonts/UbuntuRegular.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:Ubuntu-L;src:url(../fonts/UbuntuLight.eot);src:url(../fonts/UbuntuLight.eot?#iefix) format("embedded-opentype"),url(../fonts/UbuntuLight.woff) format("woff"),url(../fonts/UbuntuLight.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:Ubuntu-M;src:url(../fonts/UbuntuMedium.eot);src:url(../fonts/UbuntuMedium.eot?#iefix) format("embedded-opentype"),url(../fonts/UbuntuMedium.woff) format("woff"),url(../fonts/UbuntuMedium.ttf) format("truetype");font-style:normal;font-weight:400}@font-face{font-family:Ubuntu-B;src:url(../fonts/UbuntuBold.eot);src:url(../fonts/UbuntuBold.eot?#iefix) format("embedded-opentype"),url(../fonts/UbuntuBold.woff) format("woff"),url(../fonts/UbuntuBold.ttf) format("truetype");font-style:normal;font-weight:400}@media screen and (max-width:992px){.half{width:calc(100% - 15px)}}@media screen and (max-width:500px){.half{width:calc(41.66667% - 15px)}}
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+body {
+  background: white;
+  line-height: 1;
+  color: black;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.half {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  width: -webkit-calc(100% - 15px);
+  width: calc(100% - 15px);
+  background: red;
+  height: 154px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .half {
+    width: -webkit-calc(100% - 15px);
+    width: calc(100% - 15px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .half {
+    width: -webkit-calc(41.66667% - 15px);
+    width: calc(41.66667% - 15px);
+  }
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: blue;
+}
+
+.lal {
+  opacity: 0.5;
+}
+
+@font-face {
+  font-family: "Ubuntu-R";
+  src: url("../fonts/UbuntuRegular.eot");
+  src: url("../fonts/UbuntuRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuRegular.woff") format("woff"), url("../fonts/UbuntuRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu-L";
+  src: url("../fonts/UbuntuLight.eot");
+  src: url("../fonts/UbuntuLight.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuLight.woff") format("woff"), url("../fonts/UbuntuLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu-M";
+  src: url("../fonts/UbuntuMedium.eot");
+  src: url("../fonts/UbuntuMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuMedium.woff") format("woff"), url("../fonts/UbuntuMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu-B";
+  src: url("../fonts/UbuntuBold.eot");
+  src: url("../fonts/UbuntuBold.eot?#iefix") format("embedded-opentype"), url("../fonts/UbuntuBold.woff") format("woff"), url("../fonts/UbuntuBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=../css/main.css.map */
