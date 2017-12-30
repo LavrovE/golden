@@ -96,15 +96,17 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['connectDist', 'connectDev',  'browser-sync', 'css-libs', 'scripts', 'import', 'maincssfinal'], function() {
-    gulp.watch('app/sass/**/*.scss', ['sass']);
+
     gulp.watch('app/src/*.html', ['import']);
     gulp.watch('app/layouts/*.html', ['import']);
     gulp.watch('app/css/main.css', ['maincssfinal']);
+    gulp.watch('app/sass/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/layouts/*.html', browserSync.reload);
     gulp.watch('app/src/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
     gulp.watch('app/sass/**/*.scss', browserSync.reload);
+    gulp.watch('app/css/main.css', browserSync.reload);
 });
 
 gulp.task('glyphicon-bootstrap', function() {
@@ -118,25 +120,25 @@ gulp.task('grid', function () {
     smartgrid('app/sass', {
         outputStyle: 'scss', /* less || scss || sass || styl */
         columns: 12, /* number of grid columns */
-        offset: '32px', /* gutter width px || % */
+        offset: '15px', /* gutter width px || % */
         mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
         container: {
             maxWidth: '1200px', /* max-width оn very large screen */
-            fields: '31px' /* side fields */
+            fields: '0px' /* side fields */
         },
         breakPoints: {
             lg: {
-                width: '1100px', /* -> @media (max-width: 1100px) */
+                width: '1200px' /* -> @media (max-width: 1100px) */
             },
             md: {
-                width: '960px'
+                width: '992px'
             },
             sm: {
-                width: '780px',
-                fields: '33px' /* set fields only if you want to change container.fields */
+                width: '768px'
+                // fields: '0px' /* set fields only if you want to change container.fields */
             },
             xs: {
-                width: '560px'
+                width: '500px'
             }
             /*
             We can create any quantity of break points.

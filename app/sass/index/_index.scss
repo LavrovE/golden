@@ -1,10 +1,21 @@
+
 .half{
   @include col();
   @include size-md(12);
-  @include size-xs(6);
+  @include size-xs(5);
+  @include size(12);
+  background: red;
+  height: 154px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .flex-container{
   @include row-flex;
   @include wrapper();
+  background: blue;
 }
 
+.lal {
+  opacity: 0.5;
+}
