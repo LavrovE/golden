@@ -1,0 +1,22 @@
+//block format resize
+
+//16:9
+.relation__ration-16-9{
+  padding-top: 56.25%;
+}
+
+//height < width 2 times
+.relation__ration-1-2width{
+  padding-top: 50%;
+}
+
+
+//heigth > width 2 times
+.relation__ration-1-2height{
+  padding-top: 150%;
+}
+
+//square
+.relation__ration-full{
+  padding-top: 100%;
+}

@@ -12,7 +12,6 @@ var gulp            = require('gulp'),
     cors            = require('cors'),
     gcmq            = require('gulp-group-css-media-queries'),
     cleanCSS        = require('gulp-clean-css'),
-    smartgrid       = require('smart-grid'),
     connect         = require('gulp-connect');
 
 gulp.task('connect', function() {
@@ -115,40 +114,3 @@ gulp.task('glyphicon-bootstrap', function() {
 });
 
 //
-// run one time before work
-gulp.task('grid', function () {
-    smartgrid('app/sass', {
-        outputStyle: 'scss', /* less || scss || sass || styl */
-        columns: 12, /* number of grid columns */
-        offset: '15px', /* gutter width px || % */
-        mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
-        container: {
-            maxWidth: '1200px', /* max-width оn very large screen */
-            fields: '0px' /* side fields */
-        },
-        breakPoints: {
-            lg: {
-                width: '1200px' /* -> @media (max-width: 1100px) */
-            },
-            md: {
-                width: '992px'
-            },
-            sm: {
-                width: '768px'
-                // fields: '0px' /* set fields only if you want to change container.fields */
-            },
-            xs: {
-                width: '500px'
-            }
-            /*
-            We can create any quantity of break points.
-
-            some_name: {
-                width: 'Npx',
-                fields: 'N(px|%|rem)',
-                offset: 'N(px|%|rem)'
-            }
-            */
-        }
-    });
-});
