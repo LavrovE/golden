@@ -2,8 +2,6 @@
 @import "common_blocks/_constants.scss";
 @import "variables-functions-and-mixins";
 @import "mixins";
-@import "reset.scss";
-//::selection { background: rgba($green-color, .5); }
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -17,6 +15,7 @@
   display: table;
   clear: both;
 }
+
 
 
 @import 'media';

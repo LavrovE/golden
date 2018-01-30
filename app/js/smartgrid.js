@@ -1,6 +1,8 @@
 const smartgrid = require('smart-grid');
 
 const settings = {
+    oldSizeStyle: false,
+    properties: [],
     outputStyle: 'scss', /* less || scss || sass || styl */
     columns: 12, /* number of grid columns */
     offset: '15px', /* gutter width px || % */
