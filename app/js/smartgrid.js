@@ -5,7 +5,7 @@ const settings = {
     properties: [],
     outputStyle: 'scss', /* less || scss || sass || styl */
     columns: 12, /* number of grid columns */
-    offset: '15px', /* gutter width px || % */
+    offset: '30px', /* gutter width px || % */
     mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
     container: {
         maxWidth: '1200px', /* max-width оn very large screen */
